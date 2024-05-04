@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class insertion {
     public static void main(String[] args) {
         int[] arr = new int[50];
         int n, pos, item, i;

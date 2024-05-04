@@ -30,6 +30,12 @@ Sorting: Sorting is the process of arranging the elements in an array in a speci
 
 Access: Access is the process of retrieving the value of an element from an array. This is done by specifying the index of the desired element within the array. Array access is fast and efficient, as it does not require traversal of the entire array.
 
+## Array based List
+
+List: is a collection of item take the same type e.g. static array, dynamic array, linked list
+static array -> fixed size  
+dynamic array -> dynamic size
+
 ### Traversal Operation
 
 Array traversal refers to the process of accessing each element of an array in a sequential order. In data structures, an array is a collection of similar data items that are stored in contiguous memory locations. Traversing an array involves visiting each element of the array in a specified order, typically from the beginning to the end or from the end to the beginning.
