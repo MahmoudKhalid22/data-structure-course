@@ -64,63 +64,63 @@
 // console.log("Top of stack after pop:", stack.peek()); // Output: 2
 // stack.printStack(); // Output: 2 1
 
-class StackNode<GenericType> {
-  value: GenericType;
-  next: StackNode<GenericType> | null;
-  constructor(data: GenericType) {
-    this.value = data;
-    this.next = null;
-  }
-}
+// class StackNode<GenericType> {
+//   value: GenericType;
+//   next: StackNode<GenericType> | null;
+//   constructor(data: GenericType) {
+//     this.value = data;
+//     this.next = null;
+//   }
+// }
 
-class LinkedStack<GenericType> {
-  top: StackNode<GenericType> | null;
-  constructor() {
-    this.top = null;
-  }
-  isEmpty(): boolean {
-    return this.top === null;
-  }
-  getTop() {
-    if (this.isEmpty()) return null;
-    return this.top!.value;
-  }
-  getTopEl() {
-    if (this.isEmpty()) return null;
-    return this.top?.value;
-  }
-  addItem(item: GenericType) {
-    const newItem = new StackNode(item);
-    if (this.isEmpty()) this.top = newItem;
-    newItem.next = this.top;
-    this.top = newItem;
-  }
-  pop(): void | null {
-    if (this.isEmpty()) {
-      return null;
-    }
-    let x: GenericType | null = this.top!.value;
-    this.top = this.top!.next;
-    x = null;
-  }
-  //   printStack(): void {
-  //     let current = this.top;
-  //     while (current !== null) {
-  //       console.log(current.value);
-  //       current = current.next;
-  //     }
-  //   }
-}
-const s = new LinkedStack();
+// class LinkedStack<GenericType> {
+//   top: StackNode<GenericType> | null;
+//   constructor() {
+//     this.top = null;
+//   }
+//   isEmpty(): boolean {
+//     return this.top === null;
+//   }
+//   getTop() {
+//     if (this.isEmpty()) return null;
+//     return this.top!.value;
+//   }
+//   getTopEl() {
+//     if (this.isEmpty()) return null;
+//     return this.top?.value;
+//   }
+//   addItem(item: GenericType) {
+//     const newItem = new StackNode(item);
+//     if (this.isEmpty()) this.top = newItem;
+//     newItem.next = this.top;
+//     this.top = newItem;
+//   }
+//   pop(): void | null {
+//     if (this.isEmpty()) {
+//       return null;
+//     }
+//     let x: GenericType | null = this.top!.value;
+//     this.top = this.top!.next;
+//     x = null;
+//   }
+//   //   printStack(): void {
+//   //     let current = this.top;
+//   //     while (current !== null) {
+//   //       console.log(current.value);
+//   //       current = current.next;
+//   //     }
+//   //   }
+// }
+// const s = new LinkedStack();
 
-console.log(s.getTop());
-s.addItem("mahmoud");
-console.log(s.getTop());
-s.addItem("ahmad");
-s.pop();
-console.log(s.getTop());
-s.addItem("Ibraheem");
-s.addItem("Adel");
-s.addItem("elmy");
-console.log(s.getTop());
-console.log(s.printStack());
+// console.log(s.getTop());
+// s.addItem("mahmoud");
+// console.log(s.getTop());
+// s.addItem("ahmad");
+// s.pop();
+// console.log(s.getTop());
+// s.addItem("Ibraheem");
+// s.addItem("Adel");
+// s.addItem("elmy");
+// console.log(s.getTop());
+// console.log(s.printStack());
