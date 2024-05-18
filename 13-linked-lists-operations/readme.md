@@ -51,3 +51,41 @@ Step 5: EXIT
 ```
 
 ![](./01.jpg)
+
+#### Insertion at the end of the linked list
+
+Inserting a new node at the end of a linked list involves creating a new node with the given data and setting the next pointer of the current last node to point to the new node.
+
+Algorithm to Insert New Node at last in the Linked List
+
+```
+Step 1: IF NEWNODE = NULL Write OVERFLOW
+    Go to Step 12
+   [END OF IF]
+Step 2: IF HEAD==NULL  Process step 3 to 5 ( Case 1  New Node is the First & Last Node)
+Step 3: Set NEWNODE -> DATA = VAL
+Step 4: Set NEWNODE -> NEXT = NULL
+Step 5: Set HEAD=NEWNODE
+Step 6: Else
+step 7: Set NEWNODE -> DATA = VAL
+Step 8: Set TEMP=HEAD  ( Case 2  Traverse all node and insert New Node at Last)
+Step 9: Repeat Step 8 while TEMP -> NEXT != NULL
+Step 10: SET TEMP = TEMP -> NEXT
+[END OF LOOP]
+Step 11: SET TEMP -> NEXT = NEWNODE
+Step 12: EXIT
+
+```
+
+![](./02.jpg)
+
+#### Insertion at a specific position in the linked list
+
+To insert a node at a specific position in a linked list, we need to perform the following steps:
+
+1. Traverse the linked list until we reach the node before the desired position.
+2. Create a new node with the value to be inserted.
+3. Set the next reference of the new node to the node that is currently at the desired position.
+4. Set the next reference of the node before the desired position to the new node.
+
+[](./03.jpg)
